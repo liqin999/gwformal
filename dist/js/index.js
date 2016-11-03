@@ -1,3 +1,4 @@
+
 (function(){
 	//首页banner 焦点图
 	function banAuto(){
@@ -16,15 +17,13 @@
 			$uls.stop().animate({"left":-i*M},300,function(){
 					if(i>=li_len-1) $uls.css("left",-M+"px");
 					$lis.eq(i).find(".lis_con").show();
-					   
-					/*console.log(i);
 					if(i==5){
 						$lis.eq(1).find(".lis_con").show();
 						$lis.eq(1).siblings().find(".lis_con").hide();
 					}else{
 						$lis.eq(i).find(".lis_con").show();
 					    $lis.eq(i).siblings().find(".lis_con").hide();
-					}*/
+					}
 			});
 			for(var j=lo_len-1;j>=0;j--){
 				$los.eq(j).attr("class","");
@@ -59,7 +58,8 @@
 		}
 		conline();
 	}
-	banAuto();
+	/*为了活动暂时让首页的轮播图变为静止*/
+	/*banAuto();*/
 	//首页精品案例图片轮播
 	function IMgAuto(){
 	var i,w,case_uls,len;
@@ -100,5 +100,17 @@
 	        
 	    });
 	});
+	/*首页鼠标移入的晃动*/
+	$(".adv_img1,.adv_img2,.adv_img3,.adv_img4").mouseover(function(){
+		$(this).addClass("animated tada")
+	}).mouseout(function(){
+		$(this).removeClass("animated tada")
+	});
+	$(".eff_img1").mouseover(function(){
+		$(this).addClass("animated shake")
+	}).mouseout(function(){
+		$(this).removeClass("animated shake")
+	});
 	
-})(jQuery)
+})(jQuery);
+

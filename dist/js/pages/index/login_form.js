@@ -32,7 +32,10 @@
 		$body=$("body"),      //body
 		$user_login=$(".user_login"),   //登录页面  注册按钮
 		$us_ad=$(".us_ad"),				//免费试用==注册按钮
+		$register_btn=$(".register_btn"),
+		$main_last_btn=$(".main_last_btn"),
 		$login_user=$("#login_user"),    //整个登录注册大盒子
+		$activity_btn=$("#activity_btn"),    //首页活动的立即参与按钮
 		$login=$(".login"),             //登录页面
 		$signUp=$(".signUp"),            //注册页面
 		$user_reg=$(".user_reg"),
@@ -44,6 +47,7 @@
 			$body.css("padding-right","0px");
 		}else{
 			$body.css("padding-right","17px");
+
 		}
 		//var host = window.location.host;
 		var url = ucenterUrl+'/index.php/Ucenter/Login/loginCheck';
@@ -72,7 +76,16 @@
 	$us_ad.on("click",function(){
 		show_user();
 	});
+	$register_btn.on("click",function(){
+		show_user();
+	});
+	$main_last_btn.on("click",function(){
+		show_user();
+	});
 	$user_reg.on("click",function(){
+		show_user();
+	});
+	$activity_btn.on("click",function(){
 		show_user();
 	});
 	//banner  免费试用 登录
@@ -148,19 +161,30 @@ $(document).ready(function () { //  滚动加载动画
 	        //$(document).height()获取当前文档的高度
 	      if(w_top<=900){
 	      	    $("#fixed_top").hide();
-	      	   
 	      }else{
 	      	$("#fixed_top").show();
 	      }
-	        
 	    });
 	    
 	});
 	
 	$("#fixed_top").on("click","div",function(){
 		$('html,body').animate({"scrollTop":0},300);
-	})
+	});
 	/*登录 注册 焦点验证*/
-	//yanzheng();     //焦点验证
+
+	/*每个页面中固定的联系方式*/
+	var $fixed_con=$("#fixed_contact");
+	var $fixed_fold_con=$("#fixed_fold_contact");
+	$fixed_con.find(".close_con").on("click",function(){
+		$fixed_con.hide();
+		$fixed_fold_con.show()
+	});
+	$fixed_fold_con.find(".close").on("click",function(){
+		$fixed_fold_con.hide();
+		$fixed_con.show()
+	});
+
+
 	
-})(jQuery)
+})(jQuery);

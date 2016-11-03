@@ -245,7 +245,18 @@
 		$(".shape_close").on("click",function(){
 			$(".fixed_shape").hide();
 		})
-	}
+	};
+	/*每个页面中固定的联系方式*/
+	var $fixed_con=$("#fixed_contact");
+	var $fixed_fold_con=$("#fixed_fold_contact");
+	$fixed_con.find(".close_con").on("click",function(){
+		$fixed_con.hide();
+		$fixed_fold_con.show()
+	});
+	$fixed_fold_con.find(".close").on("click",function(){
+		$fixed_fold_con.hide();
+		$fixed_con.show()
+	});
 
 
 })(jQuery);

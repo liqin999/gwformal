@@ -156,15 +156,15 @@ $("#tp_chebox").on("click",function(){
 })
 $(document).ready(function () { //  滚动加载动画
 	    $(window).scroll(function () {
-	        var w_top=$(window).scrollTop();     //这个方法是当前滚动条滚动的距离
-	        //$(window).height()获取当前窗体的高度
-	        //$(document).height()获取当前文档的高度
-	      if(w_top<=900){
-	      	    $("#fixed_top").hide();
-	      }else{
-	      	$("#fixed_top").show();
-	      }
-	    });
+		var w_top=$(window).scrollTop();     //这个方法是当前滚动条滚动的距离
+		//$(window).height()获取当前窗体的高度
+		//$(document).height()获取当前文档的高度
+		if(w_top<=900){
+			$("#fixed_top").hide();
+		}else{
+			$("#fixed_top").show();
+		}
+	});
 	    
 	});
 	

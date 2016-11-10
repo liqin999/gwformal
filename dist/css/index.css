@@ -205,7 +205,7 @@ em, i, b {
       height: 295px; }
 .y_main .main_case {
   height: 690px;
-  background: #f5f6fa;
+  background: #ffffff;
   overflow: hidden; }
 .y_main .main_open {
   height: 645px;
@@ -519,8 +519,8 @@ em, i, b {
 .y_main .main_effict .simple .wrap .eff_arrow1{ position: absolute;  top: 132px;  left: 392px;}
 .y_main .main_effict .simple .wrap .eff_arrow2{position: absolute;top: 132px;left: 760px}
 .y_main .main_effict .simple .wrap .list li{float: left;width: 266px;height: 334px;text-align: center;background-color: #fff}
-.y_main .main_effict .simple .wrap .list li h2{font-size:22px;color: #3d3d3d;margin-top:50px; }
-.y_main .main_effict .simple .wrap .list li .eff_img1{width: 98px;height: 98px;margin-top: 43px;margin-bottom: 48px}
+.y_main .main_effict .simple .wrap .list li h2{font-size:22px;color: #3d3d3d;margin-top:48px; }
+.y_main .main_effict .simple .wrap .list li .eff_img1{width: 98px;height: 98px;margin-top: 38px;margin-bottom: 41px}
 .y_main .main_effict .simple .wrap .list .t1{font-size: 16px;color: #828282;text-align: center}
 /*首页第四栏*/
 .y_main .main_case .lis_case .link_case{position:absolute;top:0;left:0;width: 358px;height: 238px;display: block;background-color: transparent;}
@@ -536,7 +536,8 @@ em, i, b {
   transition: all .4s;
   -o-transition: all .4s;
   -moz-transition: all .4s;
-  -webkit-transition: all .4s; }
+  -webkit-transition: all .4s;
+  cursor: default}
 .main_brand .brand_link .ul_link li:hover a img {
   transform: scale(1.2, 1.2);
   -o-transform: scale(1.2, 1.2);
@@ -552,5 +553,6 @@ em, i, b {
 .main_last_btn{display: inline-block;color: #fff;background-color:#7ab55c ;font-size: 20px;width: 160px;height: 50px;line-height: 50px;text-align: center;border-radius: 3px;cursor: pointer}
 
 /*首页第一栏（立即登录的提示）*/
-#activity_btn{width: 126px;height: 24px;cursor: pointer;position: absolute;bottom: 146px;left: 50%;margin-left: -63px;}
+.activity_btn{width: 126px;height: 24px;cursor: pointer;position: absolute;bottom: 146px;left: 50%;margin-left: -63px;}
+.activity_btn .hide-btn{cursor: pointer;color: transparent;display: inline-block;width: 126px;height: 24px}
 

@@ -54,7 +54,7 @@ body,html{
         color: #fff;
         font-size: 14px; }
       .y_header .y_nav > li:hover {
-        border-top: 5px solid #7fc25e; }
+       /* border-top: 5px solid #7fc25e;*/ }
       .y_header .y_nav > li:hover a{
         color: #7fc25e; } 
       .y_header .y_nav > li.cn{

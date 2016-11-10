@@ -16,6 +16,14 @@
             return false;
         }
     }
+    function checkWeb(url) {
+        var regPassword = /^[a-z][a-z0-9]{5,11}$/;
+        if(regPassword.test(url)){
+            return true;
+        }else{
+            return false;
+        }
+    }
     /* 
      功能：保存cookies函数  
      参数：name，cookie名字；value，值 
@@ -279,7 +287,7 @@
             $("#pasd_scwz").focus();
             return false;
         }else{
-            if(!(checkPassword(shopUrl))){
+            if(!(checkWeb(shopUrl))){
                 alert('请输入正确商城网址');
                 $("#pasd_scwz").focus();
                 return false;
